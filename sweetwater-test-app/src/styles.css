@@ -1,0 +1,54 @@
+:root {
+  --bg: #0b0c10;
+  --surface: #f2f2f2;
+  --brand: #2e71ea;
+  --radius: 12px;
+}
+
+body {
+  font-family: 'Roboto', system-ui, sans-serif;
+}
+
+.btn {
+  background-color: var(--brand);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  margin: 20px;
+  padding: 20px;
+}
+.btn:hover {
+  background-color: #2952a3;
+}
+
+
+.row {
+  display: flex;
+  gap: 2rem;
+}
+
+.col {
+  flex: 1;
+}
+
+.submit-form-col {
+  flex: 1;
+  max-width: 50%;
+}
+
+.card-col {
+  flex: 2;
+}
+
+.surface {
+  border-radius: var(--radius);
+  background-color: var(--surface);
+}
+
+.card {
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
