@@ -9,11 +9,16 @@ body {
   font-family: 'Roboto', system-ui, sans-serif;
 }
 
+small {
+  color: gray;
+  font-size: 0.85rem;
+}
+
 .btn {
   background-color: var(--brand);
   color: #fff;
   border: none;
-  border-radius: var(--radius);
+  border-radius: 2rem;
   margin: 20px;
   padding: 20px;
 }
@@ -43,12 +48,57 @@ body {
 .surface {
   border-radius: var(--radius);
   background-color: var(--surface);
+  padding: 1.5rem;
+  margin: 1.5rem;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  max-width: 10%;
+  max-height: 10%;
+}
+
+.read-more-button {
+  display: inline;
+  color: blue;
+  background: none;
+  border: none;
+  text-align: left;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+
+.form input,
+.form textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.required {
+  color: red;
+  margin-left: 0.1rem;
+}
+
+.optional {
+  color: gray;
+  margin-left: 0.1rem;
+  font-size: 0.85rem;
 }

@@ -1,6 +1,7 @@
 import './styles.css'
 import ReviewCard from './components/ReviewCard'
 import ReviewSubmitForm from './components/ReviewSubmitForm'
+import reviews from './data/reviews'
 
 function App() {
 
@@ -11,7 +12,16 @@ function App() {
           <ReviewSubmitForm />
         </div>
         <div className="col card-col">
-          <ReviewCard />
+          {reviews.map((r, i) => (
+          <ReviewCard 
+            key={i}
+            title={r.title}
+            description={r.description}
+            starRating={r.starRating}
+            user={r.user}
+            image={r.imageUrl}
+          />
+          ))}
         </div>
       </div>
     </>
