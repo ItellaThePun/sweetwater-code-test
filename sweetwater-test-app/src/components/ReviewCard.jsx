@@ -4,10 +4,9 @@ import { useState } from "react";
 
 function ReviewCard ({ title, description, starRating, image, user }) {
     const [expanded, setExpanded] = useState(false);
-    const cutoff = 300;
+    const cutoff = 300; // characters before Read More cutoff kicks in
 
     const displayText = expanded ? description : description.slice(0, cutoff);
-
 
     return (
         <>
